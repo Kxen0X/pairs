@@ -1,0 +1,179 @@
+@font-face {
+   font-family: PlayGame;
+   src: url('./Square_Meal_RUS_by_Slavchansky.ttf');
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   height: 100vh;
+   background-color: #0fbe2c;
+
+   display: flex;
+
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+.startText {
+   width: 500px;
+   height: 460px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.Pari {
+   text-align: center;
+   color: White;
+   font-size: 50px;
+   font-family: PlayGame;
+   width: 400px;
+   margin-bottom: 20px;
+}
+.secondLine {
+   text-align: center;
+
+   font-family: PlayGame;
+   color: white;
+   width: 400px;
+   margin-bottom: 20px;
+}
+.startButton {
+   border: 1px solid white;
+   color: white;
+   background-color: rgba(255, 255, 255, 0);
+   padding: 10px;
+}
+.startButton:hover {
+   border: 1px solid #00ffeadd;
+   color: #00ffea;
+}
+.chooseLevel {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.chooseLevelText {
+   color: white;
+   font-size: 30px;
+   font-family: PlayGame;
+   margin-bottom: 10px;
+}
+
+.chooseLevel button {
+   border: 1px solid white;
+   color: white;
+   background-color: rgba(255, 255, 255, 0);
+   padding: 10px;
+   margin-left: 5px;
+}
+.chooseLevel button:hover {
+   border: 1px solid #00ffeadd;
+   color: #00ffea;
+}
+
+.before__game {
+   width: 800px;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   position: absolute;
+   bottom: -200px;
+}
+.active__choose__level {
+   transform: translateY(-650px);
+   transition: all 0.4s ease-in;
+}
+.active__cards {
+   transform: translateY(-650px);
+   transition: all 0.4s ease-in;
+}
+.game {
+   width: 1000px;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+
+   align-items: center;
+   position: absolute;
+}
+.cards__active {
+   z-index: 1;
+   position: absolute;
+   width: 90%;
+   height: 100vh;
+   bottom: -700px;
+   display: flex;
+   flex-wrap: wrap;
+
+   justify-content: center;
+}
+.card {
+   width: 150px;
+   height: 250px;
+   margin: 5px;
+   transition: transform 1s;
+   transform-style: preserve-3d;
+}
+.cards__active2 {
+   z-index: 1;
+   position: absolute;
+   width: 130%;
+   height: 100vh;
+   bottom: -700px;
+   display: flex;
+   flex-wrap: wrap;
+
+   justify-content: center;
+}
+.cards__active3 {
+   z-index: 1;
+   position: absolute;
+   width: 140%;
+   height: 100vh;
+   bottom: -700px;
+   display: flex;
+   flex-wrap: wrap;
+
+   justify-content: center;
+}
+.card__active {
+   transform: rotateY(180deg);
+}
+.figure {
+   padding: 0;
+   margin: 0;
+   perspective: 800px;
+}
+.card-face {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   backface-visibility: hidden;
+}
+.card-face__back {
+   font: 18px/1.6 Arial;
+   padding: 20px;
+   transform: rotateY(180deg);
+   background: #4b846a;
+   color: #fff;
+}
+
+.card__figure {
+   position: relative;
+
+   transition: transform 1s;
+   transform-style: preserve-3d;
+}
+.figcaption {
+   font: 18px/1.6 Arial;
+   padding: 20px;
+   transform: rotateY(180deg);
+   background: #4b846a;
+   color: #fff;
+}
